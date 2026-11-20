@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+    color: #252525;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 680px;
+    margin: 55px auto;
+    padding: 0 18px;
+}
+
+.tarjeta {
+    background: #fff;
+    padding: 28px 26px;
+    border: 1px solid #d7d7d7;
+    border-top: 5px solid #526dff;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, .12);
+}
+
+h1 {
+    margin: 0 0 8px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.descripcion {
+    margin: 0 0 24px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.grupo {
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 17px;
+    color: #555;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 18px 19px;
+    border: 1px solid #9ba9ed;
+    border-radius: 3px;
+    background: #fff;
+    color: #222;
+    font: inherit;
+    font-size: 18px;
+    outline: none;
+    transition: border-color .2s, box-shadow .2s;
+}
+
+input {
+    min-height: 62px;
+}
+
+textarea {
+    min-height: 176px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #526dff;
+    box-shadow: 0 0 0 2px rgba(82, 109, 255, .13);
+}
+
+.acciones {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+}
+
+button {
+    border: 0;
+    border-radius: 2px;
+    padding: 17px 22px;
+    background: #ff5b16;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+button:hover {
+    background: #e94c0b;
+}
+
+.alerta {
+    margin: 0 0 20px;
+    padding: 14px 16px;
+    border-radius: 3px;
+    line-height: 1.45;
+}
+
+.alerta p {
+    margin: 0;
+}
+
+.alerta p + p {
+    margin-top: 5px;
+}
+
+.error {
+    color: #a94442;
+    background: #f2dede;
+    border: 1px solid #e3b4b4;
+}
+
+.exito {
+    color: #276738;
+    background: #dff0d8;
+    border: 1px solid #c5e4b8;
+}
+
+@media (max-width: 520px) {
+    .contenedor {
+        margin: 22px auto;
+    }
+
+    .tarjeta {
+        padding: 22px 17px;
+    }
+
+    input,
+    textarea {
+        font-size: 16px;
+    }
+
+    .acciones button {
+        width: 100%;
+    }
+}
